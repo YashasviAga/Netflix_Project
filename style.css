@@ -1,0 +1,513 @@
+*{
+    padding: 0; margin: 0;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+}
+body{
+    background-color: black;
+}
+.main{
+    height: 720px;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('https://assets.nflxext.com/ffe/siteui/vlv3/6cefb2f5-90be-4f57-adc4-f6c3c579273d/3943990c-f4e0-4147-82ad-f531e2b547f3/IN-en-20240401-popsignuptwoweeks-perspective_alpha_website_large.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.logo
+{
+    margin-top:20px;
+    padding-left:0.0001%;
+}
+.navigation{
+    display: flex;
+    justify-content: space-around;
+}
+.gen_setting
+{
+    padding: 25px 0 0;
+    width: 50%;
+    text-align: right;
+}
+.navigation img{
+    width: 50%;
+}
+#lang
+{
+    margin-right: 20px;
+    background: none;
+    border: 1px solid white;
+    border-radius: 0.25rem;
+    font-weight: 500;
+    font-size: 0.875rem;
+    width: auto;
+}
+#lang select{
+    padding: 0.35rem 1rem;
+    background: none;
+    border: none;
+    color: white;
+}
+#Signin
+{
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 0.25rem;
+    padding: 0.25rem 1rem;
+    width: auto;
+    font-size: 0.875rem;
+    font-weight: 500;
+    min-height: 2rem;
+
+}
+.header_content
+{
+    text-align: center;
+    color: white;
+    margin-top: 14%;
+    line-height: 1.6;
+}
+.header_content h1
+{
+    font-size: 50px;
+}
+.header_content .l1
+{
+    font-size: 25px;
+}
+.header_content .l2
+{
+    font-size: 20px ;
+}
+#emailforsignup
+{
+    background-color: rgba(0, 0, 0, 0.358);
+    height: 45px;
+    width: 300px;
+    border-radius: 4px;
+    border: 2px red solid;
+    color: white;
+    margin-right: 10px;
+    padding: 3px 5px 0px 10px;
+}
+.emailbox
+{
+    position: relative;
+    margin: 2%;
+}
+.emailbox label
+{
+    position: absolute;
+    top: 12px;
+    left: 34%;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+    pointer-events: none;
+}
+ .emailbox input:focus + label,
+ .emailbox input:valid + label{
+    top: 5px;
+    font-size: 9px;
+    color: white;
+ }
+
+ .emailbox input[type="email"]:focus,
+ .emailbox input[type="email"]:valid {
+   border-color: #555;
+ }
+#submitemail
+{
+    background-color: red;
+    color: white;
+    height: 50px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    padding: 15px 25px;
+}
+.curve{
+    border: solid .35rem transparent;
+    height: 100%;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom: none;
+    background-color:rgb(35, 35, 35);;
+}
+section{
+    padding: 2.5%;
+}
+.about_plan{
+    margin: 50px auto;
+    width: 75%;
+    border-radius: 1rem;
+    color: white;
+    padding: 40px;
+    transition: 0.5s;
+    background: linear-gradient(93deg,  #43172b, #230a25);
+}
+.about_plan:hover{
+    background: linear-gradient(127deg, #662341, #37103a);
+    transform: scale(1.025);
+    transition: 0.5s;
+}
+
+.description
+{
+    padding-top:10%;
+}
+.description1
+{
+    padding-left: 5%;
+    
+    width: 40%;
+}
+.description2
+{
+    width: 45%;
+    padding-right: 5%;
+    
+}
+.description2 p
+{
+    width: 80%;
+}
+.description3 
+{
+    padding-left:10%;
+}
+.description3 p
+{
+    width: 80%;
+}
+.description4
+{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.description4 p
+{
+    width: 80%;
+}
+.description h1
+{
+    font-size:  3rem;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+.description p
+{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.type{
+    display: flex;
+    justify-content: center;
+    color: white;
+    position: relative;
+}
+.tv1, .tv2{
+    position: relative;
+}
+.video1{
+    width: 470px;
+    z-index: -10;
+    position: absolute;
+    top: 100px;
+    right: 90px;
+}
+.video2{
+    width: 400px;
+    z-index: -10;
+    position: absolute;
+    top: 50px;
+    right: 120px;
+}
+.video2 video{
+    width: 400px;
+}
+.kidsimg
+{
+    margin-left: 20%;
+    width: 120%;
+    height: 110%;
+}
+.tv4
+{
+    margin-right: 10%;
+}
+
+.about_series{
+    background-color: black;
+    padding: 10px 5px;
+    border-radius: 15px;
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin: 0 auto;
+    position: relative;
+    top: -120px;
+}
+.poster img{
+    width: 60px;
+}
+.series_name{
+    padding: 10px 10px 10px 20px;
+    align-self: center;
+}
+.series_name h3, .series_name h4{
+    font-weight: 400;
+}
+.downloadit{
+    background: url('https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif');
+    width: 5rem;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+.membership{
+    margin: 10px auto;
+    width: 75%;
+    border-radius: 1rem;
+    color: white;
+    padding: 40px;
+    transition: 0.5s;
+    background: linear-gradient(97deg, #45172B 1.27%, #120C1F 75.23%);
+}
+.membership:hover{
+    background: linear-gradient(127deg, #662341, #37103a);
+    transform: scale(1.025);
+    transition: 0.5s;
+}
+.heading{
+    color: white;
+    padding-left: 10%;
+}
+.ques{
+    width: 80%;
+    margin: 0 auto;
+}
+.question{
+    width: 100%;
+    margin: 10px auto 0px;
+    display: flex;
+    background-color: rgb(61, 61, 61);
+    justify-content: space-between;
+    color: white;
+    padding: 25px;
+    font-size: 20px;
+    transition: all 0.3s ease-in-out;
+    border: none;
+}
+.question:hover{
+    background-color: rgba(79, 79, 79, 0.93);
+    transition: all 0.3s ease-in-out;
+}
+.plusbutton,
+.crossbutton {
+    transition: opacity 0.5s ease-in-out;
+    cursor:pointer;
+}
+.dialog_box
+{
+    display: none;
+    transition: opacity 0.5s ease, display 0.5s ease;
+    margin-top: 2px;
+}   
+.dialog_box p
+{
+    color: white;
+    margin: 0px auto;
+    display: flex;
+    background-color: rgb(61, 61, 61);
+    justify-content: space-between;
+    color: rgba(255, 255, 255, 0.950);
+    padding: 10px 25px;
+    font-size: 18px;
+    transition: all 0.3s ease-in-out;
+}
+.emailbottom{
+    margin: 50px auto;
+}
+#emailforsignupbottom
+{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.358);
+    height: 45px;
+    width: 800px;
+    border-radius: 4px;
+    border: 2px red solid;
+    margin-right: 13px;
+    padding: 3px 5px 0px 10px;
+}
+.emailboxbottom
+{
+    position: relative;
+    padding-left: 10%;
+    padding-top: 2%;
+}
+.emailboxbottom label
+{
+    position: absolute;
+    top: 40px;
+    left: 11%;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+    pointer-events: none;
+}
+ .emailboxbottom input:focus + label,
+ .emailboxbottom input:valid + label{
+    top: 31px;
+    font-size: 9px;
+    color: white;
+ }
+ #submitemailbottom
+ {
+     background-color: red;
+     color: white;
+     height: 50px;
+     border: none;
+     border-radius: 4px;
+     font-size: 16px;
+     padding: 15px 25px;
+ } 
+.linksection{
+    color: rgba(255, 255, 255, 0.7);
+    width: 75%;
+    margin: 0px auto 20px;
+}
+.linksection a{
+    color: rgba(255, 255, 255, 0.7);
+}
+.links{
+    display: grid;
+    padding: 4px;
+    line-height: 2.5;
+    font-size: 0.875rem;
+    font-weight: 400;
+    height: auto;
+    margin: 20px auto;
+}
+.links
+{
+    display: grid;
+    grid-template-columns:repeat(4,1fr) ;
+   
+    justify-content: space-evenly;
+    text-align: left;
+}
+.columnknot
+{
+    width: 25%;
+}
+.creator{
+    color: rgba(255, 255, 255, 0.7);
+    width: 80%;
+    margin: 0px 0 20px;
+    animation: highlight 1.5s ease-in 0.5s infinite alternate;
+}
+@keyframes highlight{
+    from{
+        color: rgba(255, 255, 255, 0.7);
+    }
+    to{
+        color: rgba(255, 0, 0, 0.7);
+    }
+}
+@media only screen and (max-width: 1154px)
+{
+    #emailforsignupbottom 
+    {
+        width: 60%;
+    }
+    .emailbox label
+    {
+        position: absolute;
+        left:29%;
+    }
+}
+
+@media only screen and (max-width:960px)
+{
+    .type1
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .type2
+    {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .type3
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .type4
+    {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .video1{
+        left: 23%;
+    }
+    .video2{
+        left: 28%;
+    }
+    .kidsimg
+    {
+        width: 60%;
+    }
+    .type
+    {
+        text-align: center;
+    }
+    .description
+    {
+        width: 90%;
+    }
+    .type p
+    {
+        text-align: center;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:870px)
+{
+    .video1{
+        left: 15%;
+    }
+    .video2{
+        left: 20%;
+    }
+    .emailbox label
+    {
+        position:absolute;
+        left:22%;
+    }
+    .emailboxbottom label
+    {
+        top:30px;
+    }
+    .emailboxbottom input:focus + label,
+    .emailboxbottom input:valid + label{
+       top: 20px;
+       font-size: 9px;
+       color: white;
+    }
+   .links
+   {
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+   }
+}
+@media only screen and (max-width:638px)
+{
+    .emailbox label
+    {
+        position:absolute;
+        left:13%;
+    }
+}
